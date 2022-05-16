@@ -1,0 +1,33 @@
+.about {
+  .family-img {
+    max-height: 300px;
+  }
+  .family-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacer);
+    margin-bottom: calc(var(--spacer) * var(--multiplicator-2));
+  }
+}
+
+@media (min-width: $medium) {
+  .about {
+    .family-wrapper {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 2rem;
+      
+      // & > * {
+      //   flex: 1 1 100%;
+      // }
+
+      & > *:nth-child(1) {
+        align-self: center;
+        max-width: 45%;
+      }
+      & > *:nth-child(2) {
+        max-width: 50%;
+      }
+    }
+  }
+}

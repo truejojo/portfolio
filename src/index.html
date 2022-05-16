@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=PT+Serif&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <title>My Portfolio - Johannes Vehring</title>
+</head>
+
+<body>
+  <header class="site-header" id="home">
+    <div class="container site-header--inner">
+      <a class="logo" href="#home">
+        <span class="text">My Portfolio</span><br>
+        <span class="author">Johannes Vehring</span>
+      </a>
+
+      <nav class="site-nav">
+        <ul class="list">
+          <li><a href="#skills">skills</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#projects">projects</a></li>
+          <li><a href="#interests">interests</a></li>
+          <li><a href="./games.html">games</a></li>
+        </ul>
+      </nav>
+
+      <button class="toggle-menu">
+        <span class="toggle"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="bg-default" id="intro">
+      <div class="intro container">
+        <h1 class="title">Moin, ich bin<br>Johannes Vehring</h1>
+        <img class="portfolio-img responsive-img">
+        <p class="subtitle">Frontend Developer</p>
+      </div>
+    </section>
+
+    <section class="bg-light" id="skills">
+      <div class="skills container container--small">
+        <h2 class="text-center">Meine Fähigkeiten</h2>
+
+        <div class="cards split">
+          <div class="card bg-accent">
+            <h3>Sprachen</h3>
+            <ul class="list text-uppercase flow-content">
+              <li>html</li>
+              <li>css</li>
+              <li>sass</li>
+              <li>js/es6</li>
+              <li>ts</li>
+            </ul>
+          </div>
+
+          <div class="card bg-accent">
+            <h3>Kenntnisse</h3>
+            <ul class="list text-uppercase flow-content">
+              <li>oop</li>
+              <li>refactoring</li>
+              <li>clean code</li>
+              <li>vscode</li>
+              <li>git</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="bg-dark" id="about">
+      <div class="about container container--small">
+        <h2>Über mich</h2>
+        <div class="family-wrapper">
+          <p>
+            Ich bin ein Familienmensch 👨‍👩‍👧‍👦. Papa, Ehemann und leidenschaftlicher Programmierer 👨‍💻. Fahre
+            viel Fahrrad 🚲 und mag Fußball, besonders den FC St.Pauli ⚽️.
+          </p>
+          <img class="family-img responsive-img">
+        </div>
+        <hr>
+        <div class="text-wrapper flow-content">
+          <p>
+            2016 habe ich meine Umschulung zum Anwendungsentwickler erfolgreich abgeschlossen 👨‍🎓, nun möchte ich
+            auch in diesem Beruf tätig sein. Auf
+            <a target="_blank" href="https://xing.com/">meinem Xing Profil</a>,
+            könnt ihr einen Blick auf meinen bisherign beruflichen Werdegang werfen 🙂.<br>
+            Nebenbei mache ich gerade noch eine online Zertifizierung bei
+            <a target="_blank" href="https://scrimba.com">Scrimba</a> zum
+            <a target="_blank" href="https://scrimba.com/learn/frontend">Frontend Developer</a>
+          </p>
+          <p>
+            Suche ein sympatisches Team 👩🏼‍💻👨🏻‍💻👨🏿‍💻, welches nicht davor zurück schreckt, einen älteren
+            Kerl als Junior Frontend Developer einzustellen. Auf
+            <a target="_blank" href="https://github.com/">
+              meinem GitHub Profil</a> könnt Ihr den Code 💻 zu der gesamten Webseite einsehen.<br>
+            30-35 Std. 🕒 Stelle in Hamburg oder nord-westliches Umland - das wäre Perfekt 🙂. Anfangen kann ich ab Juli
+            2022.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-accent projects-bg-img" id="projects">
+      <div class="projects text-center container flow-content">
+        <header>
+          <h2>Meine Projekte</h2>
+          <p>
+            Alle Projekte habe ich in Objektorientierter Schreibweise umgesetzt. Da ich auch den Funktionalen
+            Programmierstil können möchte, bin ich gerade dabei, diesen zu erlernen
+          </p>
+        </header>
+
+        <div class="cards grid-ish">
+          <!-- <div class="cards tile-grid"> -->
+          <div class="card bg-light bg-clr-highlight">
+            <h3>Battle</h3>
+            <div class="text flow-content">
+              <p>Auch unter Leben und Tod bekannt.</p>
+            </div>
+            <a class="btn battle" href="./battle.html">zum Spiel</a>
+          </div>
+
+          <div class="card bg-light bg-clr-highlight">
+            <h3>Memory</h3>
+            <div class="text flow-content">
+              <p>Ein Klassiker unter den Gedächtnisspilen.</p>
+            </div>
+            <a class="btn memory" href="./memory.html">zum Spiel</a>
+          </div>
+
+          <div class="card bg-light bg-clr-highlight">
+            <h3>Merkfähigkeit</h3>
+            <div class="text flow-content">
+              <p>Das Spiel hat ähnlichkeit mit dem bekannten Spiel 'Simon'.</p>
+            </div>
+            <a class="btn retentivity" href="./retentivity.html">zum Spiel</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="bg-light" id="interests">
+      <div class="interests container container--small">
+        <h2 class="text-center">Interessen</h2>
+        <p class="subtitle text-center">was ich noch lernen will</p>
+
+        <div class="cards split">
+          <div class="card bg-dark">
+            <h3 class="title">Sprachen</h3>
+            <ul class="list text-uppercase  flow-content">
+              <li>react</li>
+              <li>redux</li>
+              <li>node</li>
+              <li>express</li>
+              <li>mongodb</li>
+            </ul>
+          </div>
+          
+          <div class="card bg-dark">
+            <h3 class="title">Kenntnisse</h3>
+            <ul class="list text-uppercase  flow-content">
+              <li>FP</li>
+              <li>TDD</li>
+              <li>...und bei euch?</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer--inner">
+      <a class="logo" href="#home">
+        <span class="text">My Portfolio</span><br>
+        <span class="author">Johannes Vehring</span>
+      </a>
+      <ul class="social-media-list">
+        <li>
+          <a target="_blank" href="https://github.com/">
+            <i class="fa fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.xing.com/">
+            <i class="fa fa-xing"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+
+</html>

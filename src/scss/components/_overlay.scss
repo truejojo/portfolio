@@ -1,0 +1,58 @@
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+
+  &.battle {
+    --hue: var(--accent-hue-II);
+  }
+  &.memory {
+    --hue: var(--accent-hue);
+  }
+  &.retentivity {
+    --hue: var(--secondary-hue);
+  }
+
+  .overlay-setup {
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+
+    .change-mode,
+    .back {
+      font-size: 2rem;
+      font-weight: var(--fw-300);
+      color: inherit;
+      opacity: 0.25;
+      background-color: transparent;
+      transition: opacity 0.3s ease-in-out;
+      &:hover,
+      &:hover {
+        opacity: 0.75;
+        cursor: pointer;
+      }
+    }
+
+    .back {
+      text-decoration: none;
+    }
+  }
+}
+
+.show-overlay {
+  display: block;
+}
+
+@media (orientation: landscape) and (max-width: $medium) {
+  .overlay {
+    .overlay-setup {
+      height: 15vh;
+    }
+  }
+}

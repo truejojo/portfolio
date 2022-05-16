@@ -1,0 +1,123 @@
+.site-header {
+  padding-top: var(--spacer-em);
+  padding-bottom: var(--spacer-em);
+  color: var(--clr-neutral-100);
+  background-color: hsl(var(--clr-primary-800));
+}
+
+.site-header--inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* LOGO */
+.logo {
+  text-decoration: none;
+  line-height: 1;
+
+  &:hover,
+  &:focus-visible {
+    color: hsl(var(--clr-secondary-500));
+  }
+
+  .text {
+    font-family: var(--ff-serif);
+    font-size: var(--fs-600);
+    font-variant: small-caps;
+    line-height: 0.7;
+  }
+
+  .author {
+    font-size: var(--fs-300);
+    text-transform: uppercase;
+    // letter-spacing: 0.17rem;
+    letter-spacing: 0.09rem;
+    @-moz-document url-prefix() {
+      letter-spacing: 0.17rem;
+    }
+  }
+}
+
+.toggle-menu {
+  position: relative;
+  width: 2.5rem;
+  height: 35px;
+  background-color: transparent;
+  border: none;
+  align-self: center;
+
+  /* Close */
+  .toggle,
+  .toggle::before,
+  .toggle::after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: var(--clr-neutral-100);
+  }
+
+  .toggle::before,
+  .toggle::after {
+    content: '';
+  }
+
+  .toggle::before {
+    top: 10px;
+  }
+
+  .toggle::after {
+    bottom: 10px;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    & .toggle,
+    & .toggle::before,
+    & .toggle::after {
+      background-color: hsl(var(--clr-secondary-500));
+    }
+  }
+
+  /* Open */
+  .toggle.open {
+    background-color: transparent;
+  }
+  .toggle.open::before {
+    transform: rotate(45deg);
+    top: 0px;
+  }
+  .toggle.open::after {
+    transform: rotate(-45deg);
+    bottom: 0;
+  }
+}
+
+@media (min-width: $medium) {
+  .logo {
+    .author {
+      font-size: var(--fs-300);
+      letter-spacing: 0.19rem;
+      @-moz-document url-prefix() {
+        letter-spacing: 0.27rem;
+      }
+    }
+  }
+
+  .toggle-menu {
+    display: none;
+  }
+}
+
+@media (min-width: $large) {
+  .logo {
+    .author {
+      font-size: 1.25rem;
+      letter-spacing: 0.32rem;
+      @-moz-document url-prefix() {
+        letter-spacing: 0.42rem;
+      }
+    }
+  }
+}

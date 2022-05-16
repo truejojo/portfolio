@@ -1,0 +1,61 @@
+/* More classes */
+.responsive-img {
+  object-fit: cover;
+  width: 100%;
+  min-height: 200px; /* look at the image self */
+}
+
+.clr-accent {
+  color: hsl(var(--clr-accent-400));
+}
+
+.bgc-highlight-I {
+  background-color: hsl(var(--clr-highlight-I));
+}
+
+.bgc-highlight-II {
+  background-color: hsl(var(--clr-highlight-II));
+}
+
+.bgc-highlight-III {
+  background-color: hsl(var(--clr-highlight-III));
+}
+
+.bgc-default {
+  background-color: hsl(var(--bg-default, var(--clr-primary-400)));
+}
+
+.bgc-primary-600 {
+  background-color: hsl(var(--clr-primary-600));
+}
+
+.text-center {
+  text-align: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.grid-center {
+  display: grid;
+  place-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.padding-vertical {
+  padding-top: var(--section-space);
+  padding-bottom: var(--section-space);
+}
+
+.margin-bottom {
+  margin-bottom: var(--spacer) / 2;
+}

@@ -1,0 +1,9 @@
+.interests {
+  h2 {
+    margin-bottom: 0;
+  }
+  .subtitle {
+    font-size: var(--fs-500);
+    margin-bottom: calc(var(--margin-bottom) * var(--multiplicator-2));
+  }
+}

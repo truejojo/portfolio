@@ -1,0 +1,108 @@
+.overlay.memory {
+  overflow-y: scroll;
+
+  // https://css-tricks.com/almanac/properties/s/scrollbar/
+  &::-webkit-scrollbar {
+    width: 1em;
+  }
+  &::-webkit-scrollbar-track {
+    // box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 6px var(--clr-neutral-900);
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--clr-neutral-600);
+    outline: 1px solid var(--clr-neutral-800);
+  }
+}
+
+.memory .game-board {
+  .tile-table {
+    font-size: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+    grid-gap: 5px;
+    margin-bottom: calc(var(--spacer) * var(--multiplicator-2));
+  }
+
+  .tile {
+    min-height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: transparent;
+    background-color: hsl(var(--clr-primary-500));
+
+    &:hover {
+      background-color: hsl(var(--clr-primary-400));
+      transition: var(--transition);
+    }
+  }
+
+  .show-tile {
+    background-color: hsl(var(--clr-primary-300));
+    color: var(--clr-neutral-700);
+  }
+
+  .hide-tile {
+    background-color: transparent;
+    color: transparent;
+
+    &:hover {
+      background-color: transparent;
+      transition: none;
+    }
+  }
+
+  .btn-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacer);
+    margin-top: var(--spacer);
+  }
+
+  .final-winner {
+    margin-bottom: 3rem;
+  }
+}
+
+@media (min-width: $medium) {
+  .memory .game-board {
+    .tile-table {
+      font-size: 35px;
+      grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+      grid-gap: 7.5px;
+      margin-bottom: calc(var(--spacer) * var(--multiplicator-3));
+    }
+
+    .tile {
+      min-height: 110px;
+    }
+
+    .btn-wrapper {
+      margin-top: calc(var(--spacer) * var(--multiplicator-2));
+    }
+
+    .final-winner {
+      margin-bottom: 4rem;
+    }
+  }
+}
+
+@media (min-width: $large) {
+  .memory .game-board {
+    .tile-table {
+      font-size: 45px;
+      grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+      grid-gap: 10px;
+    }
+
+    .tile {
+      min-height: 125px;
+    }
+
+    .final-winner {
+      margin-bottom: 5rem;
+    }
+  }
+}

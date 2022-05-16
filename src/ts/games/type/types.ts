@@ -1,0 +1,1 @@
+export type TileTyp = 'letters' | 'numbers' | 'smileys' | 'emojis';

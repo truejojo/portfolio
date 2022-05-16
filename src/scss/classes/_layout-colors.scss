@@ -1,0 +1,54 @@
+/* Classes for color layout */
+[class*='bg-'] {
+  --clr-accent: var(--clr-accent-II-400);
+
+  color: hsl(var(--fg, var(--clr-neutral-800)));
+  background: hsl(var(--bg, var(--clr-primary-400)));
+}
+
+.bg-light {
+  // --clr-accent: var(--clr-accent-700);
+  // --highlight-I: var(--clr-highlight-I);
+  // --highlight-II: var(--clr-highlight-II);
+  // --highlight-III: var(--clr-highlight-III);
+
+  --bg: var(--clr-primary-300);
+}
+
+.bg-dark {
+  --clr-accent: var(--clr-primary-800);
+
+  --fg: var(--clr-primary-200);
+  --bg: var(--clr-primary-700);
+}
+
+.bg-accent {
+  --clr-accent: var(--clr-accent-500);
+
+  --fg: var(--clr-primary-900);
+  --bg: var(--clr-accent-400);
+}
+
+.bg-clr-highlight {
+  --highlight-I: var(--clr-highlight-I);
+  --highlight-II: var(--clr-highlight-II);
+  --highlight-III: var(--clr-highlight-III);
+}
+
+.clr-highlight-II {
+  --clr-highlight: var(--clr-highlight-II);
+}
+
+.clr-highlight-III {
+  --clr-highlight: var(--clr-highlight-III);
+}
+
+.dark-mode {
+  color: var(--clr-neutral-100);
+  background-color: hsl(var(--hue, var(--primary-hue)) var(--saturation) var(--lightness-800));
+}
+
+.light-mode {
+  color: var(--clr-neutral-900);
+  background-color: hsl(var(--hue, var(--primary-hue)) var(--saturation) var(--lightness-600));
+}

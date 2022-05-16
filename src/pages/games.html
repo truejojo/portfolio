@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=PT+Serif&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <title>My Portfolio - Johannes Vehring</title>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container site-header--inner">
+      <a class="logo" href="./index.html#home">
+        <span class="text">My Portfolio</span><br>
+        <span class="author">Johannes Vehring</span>
+      </a>
+
+      <nav class="site-nav">
+        <ul class="list">
+          <li><a href="./index.html#skills">skills</a></li>
+          <li><a href="./index.html#about">about</a></li>
+          <li><a href="./index.html#projects">projects</a></li>
+          <li><a href="./index.html#interests">interests</a></li>
+          <li><a class="current" href="#">games</a></li>
+        </ul>
+      </nav>
+
+      <button class="toggle-menu">
+        <span class="toggle"></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="slider">
+      <span class="prev">&#60;</span>
+      <h1 class="slide bgc-highlight-I">
+        <a href="./battle.html" class="link grid-center">Battle</a>
+      </h1>
+      <h1 class="slide none bgc-highlight-II">
+        <a href="./memory.html" class="link grid-center">Memory</a>
+      </h1>
+      <h1 class="slide none bgc-highlight-III">
+        <a href="./retentivity.html" class="link grid-center">Merkfähigkeit</a>
+      </h1>
+      <span class="next">&#62;</span>
+    </div>
+
+    <div class="games-content">
+      <div class="game-content bgc-primary-600 text-center">
+        <p class="title h3">Welches Spiel willst Du spielen?<br>
+          Wähle aus und viel Spaß beim spielen 🙂.</p>
+        <div class="games-choice">
+          <a class="btn btn--small battle" href="./battle.html">zum Spiel</a>
+          <a class="btn btn--small memory" href="./memory.html">zum Spiel</a>
+          <a class="btn btn--small retentivity" href="./retentivity.html">zum Spiel</a>
+        </div>
+      </div>
+      <aside class="game-sidebar bgc-primary-600">
+        <ul class="game-list">
+          <li class="bgc-highlight-I"><a class="grid-center" href="./battle.html">Battle</a></li>
+          <li class="bgc-highlight-II"><a class="grid-center" href="./memory.html">Memory</a></li>
+          <li class="bgc-highlight-III"><a class="grid-center" href="./retentivity.html">Merkfähigkeit</a></li>
+          <li class="bgc-default"><a href="./index.html#home" class="grid-center">Home</a></li>
+        </ul>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer--inner">
+      <a class="logo" href="./index.html#home">
+        <span class="text">My Portfolio</span><br>
+        <span class="author">Johannes Vehring</span>
+      </a>
+      <ul class="social-media-list">
+        <li>
+          <a target="_blank" href="https://github.com/">
+            <i class="fa fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.xing.com/">
+            <i class="fa fa-xing"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+.projects-bg-img {
+  max-width: 100%;
+  height: auto;
+
+  // background-image: url('./img/schreibtisch.jpg');
+  background-color: var(--neutral-900);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: multiply;
+}
+
+.projects {
+  --opacity: 0.8;
+  --space: var(--card-spacer);
+
+  header {
+    text-align: center;
+    background-color: hsl(var(--clr-accent) / var(--opacity));
+    padding: 4rem;
+    box-shadow: var(--box-shadow);
+
+    h2 {
+      font-weight: var(--fw-400);
+    }
+    p {
+      max-width: 50ch;
+      margin: 0 auto;
+    }
+  }
+
+  .card {
+    background-color: hsl(var(--clr-primary-500) / var(--opacity));
+
+    h3 {
+      font-family: var(--ff-serif);
+      text-shadow: var(--text-shadow);
+    }
+
+    .text {
+      margin-bottom: calc(var(--spacer) * var(--multiplicator-4));
+    }
+
+    .btn {
+      text-shadow: var(--text-shadow-gradient);
+      margin: 0 auto;
+    }
+
+    &:nth-of-type(1) {
+      h3 {
+        color: hsl(var(--highlight-I));
+      }
+    }
+    &:nth-of-type(2) {
+      h3 {
+        color: hsl(var(--highlight-II));
+      }
+    }
+    &:nth-of-type(3) {
+      h3 {
+        color: hsl(var(--highlight-III));
+      }
+    }
+  }
+}

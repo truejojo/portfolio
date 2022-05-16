@@ -1,0 +1,111 @@
+/* Default for margin: 0 */
+.flow-content > * + * {
+  margin-top: var(--space, var(--spacer));
+}
+
+/* Flex: even-columns with media */
+.split {
+  display: flex;
+  flex-direction: column;
+}
+
+.split > * + * {
+  margin: var(--space, var(--card-spacer) 0 0 0);
+  // margin: calc(var(--spacer) * var(--multiplicator-2)) 0 0 0;
+}
+
+// Content Sidebar
+.content-sidebar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: calc(var(--spacer) * var(--multiplicator-2));
+}
+
+.content-sidebar > *:nth-child(1) {
+  flex: 1 1 60%;
+  // min-width: 450px;
+}
+
+.content-sidebar > *:nth-child(2) {
+  flex: 1 1 25%;
+  // min-width: 15ch;
+  // min-width: 250px;
+  // max-width: 300px;
+}
+
+/* Flex: grid-ish without media */
+.grid-ish {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: var(--card-spacer);
+  // grid-gap: calc(var(--spacer) * var(--multiplicator-2));
+}
+
+.grid-ish > * {
+  flex: 1 1 280px;
+}
+
+/* grid-ish: optional */
+.grid-ish > * > div {
+  // max-width: 65ch;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Real Grid - like container */
+.site-grid {
+  display: grid;
+  grid-template-columns: minmax(1em, 1fr) minmax(0px, 850px) minmax(1em, 1fr);
+  grid-gap: var(--spacer);
+}
+
+.site-grid > * {
+  grid-column: 2 / -2;
+}
+
+/* Cards, Posts... Grid */
+.tile-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: var(--card-spacer);
+}
+
+// .tile-grid > * {
+//   display: grid;
+//   align-items: start;
+
+//   a,
+//   .btn {
+//     align-self: end;
+//   }
+// }
+
+/* Media */
+@media (min-width: $small) {
+  /* Flex: even-columns media-part */
+  .split {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .split > * {
+    flex-basis: 100%;
+  }
+
+  .split > * + * {
+    margin: 0 0 0 var(--card-spacer);
+  }
+
+  /* even-columns: optional col-system */
+  .col-1 {
+    flex-basis: 25%;
+  }
+
+  .col-2 {
+    flex-basis: 50%;
+  }
+
+  .col-3 {
+    flex-basis: 75%;
+  }
+}

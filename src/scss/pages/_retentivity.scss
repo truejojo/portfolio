@@ -1,0 +1,33 @@
+.retentivity .game-board-wrapper {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .game-board {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--spacer) * 2);
+
+    .user-input {
+      align-self: center;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .user-input,
+    .syllablesymbol-string {
+      letter-spacing: 1.5px;
+    }
+    
+    .btn-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: var(--spacer);
+    }
+
+    .btn {
+      align-self: center;
+    }
+  }
+}

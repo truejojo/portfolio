@@ -1,0 +1,45 @@
+:root {
+  --multiplicator-2: 2;
+  --multiplicator-3: 3;
+  --multiplicator-4: 4;
+
+  --border-radius: 1rem;
+
+  --margin-bottom: 1em;
+
+  --spacer: 1rem;
+  --spacer-em: 1em;
+
+  --section-space: 3rem;
+  --card-spacer: 2rem;
+
+  --box-shadow: 0 0.75rem 1rem rgba(0, 0, 0, 0.15);
+  --text-shadow: 4px 4px #000;
+  --text-shadow-gradient: 1px 1px #000;
+
+  --timer: 0.3s;
+  --transition: color var(--timer) ease-out,
+    background-color var(--timer) ease-out;
+  --transition-btn: outline var(--timer) ease-in,
+    outline-offset var(--timer) ease-out;
+}
+
+// Media Queries
+@media (min-width: $small) {
+  :root {
+    --section-space: 4rem;
+  }
+}
+
+@media (min-width: $medium) {
+  :root {
+    --section-space: 6rem;
+    --card-spacer: 3rem;
+  }
+}
+
+@media (min-width: $large) {
+  :root {
+    --section-space: 8rem;
+  }
+}

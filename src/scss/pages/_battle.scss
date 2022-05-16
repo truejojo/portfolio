@@ -1,0 +1,139 @@
+.battle .game-board {
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .game-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .cards-wrapper {
+    height: 62vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .card-wrapper {
+    height: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      height: 20%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .card-slot {
+      height: 80%;
+
+      .card-img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    .card-2-slot {
+      order: -1;
+    }
+  }
+
+  .draw-cards {
+    align-self: center;
+  }
+
+  &.final-result {
+    justify-content: center;
+    gap: calc(var(--spacer) * 3);
+
+    .game-wrapper {
+      height: auto;
+    }
+
+    .final-winner-emoji {
+      font-size: var(--fs-800);
+      display: block;
+      margin: var(--spacer);
+    }
+
+    .btn-wrapper {
+      display: flex;
+      justify-content: center;
+      gap: calc(var(--spacer) * 3);
+    }
+  }
+}
+
+@media (orientation: landscape) and (max-width: $medium) {
+  .battle .game-board {
+    height: 80vh;
+
+    .cards-wrapper {
+      height: 35vh;
+      flex-direction: row;
+      justify-content: center;
+      gap: var(--spacer);
+    }
+
+    .card-wrapper {
+      height: 100%;
+      justify-content: space-between;
+      gap: calc(var(--spacer) / 2);
+
+      .card-2-slot {
+        order: 0;
+      }
+    }
+
+    &.final-result {
+      grid-gap: var(--spacer);
+
+      .final-winner-emoji {
+        margin: calc(var(--spacer) * 0.5);
+      }
+    }
+  }
+}
+
+@media (min-width: $medium) {
+   .battle .game-board {
+    height: 80vh;
+
+    .cards-wrapper {
+      height: 35vh;
+      flex-direction: row;
+      justify-content: center;
+      gap: calc(var(--spacer) * 3);
+    }
+    
+    .card-wrapper {
+      height: 100%;
+      justify-content: space-between;
+      gap: calc(var(--spacer) / 2);
+      
+      .card-2-slot {
+        order: 0;
+      }
+    }
+    
+    &.final-result {
+      gap: calc(var(--spacer) * 3);
+
+      .final-winner-emoji {
+        margin: calc(var(--spacer) * 0.5);
+      }
+    }
+  }
+}
+
+@media (min-width: $medium) and (orientation: landscape) {
+}
+
+@media (min-width: $medium) and (orientation: portrait) {
+}

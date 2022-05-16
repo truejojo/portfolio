@@ -1,0 +1,18 @@
+.card {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--box-shadow);
+
+  ul,
+  div {
+    flex-grow: 1;
+  }
+
+  ul {
+    --space: .35em;
+    font-size: var(--fz-400);
+    background-color: hsl(var(--clr-accent));
+    padding: 1.5rem;
+  }
+}
