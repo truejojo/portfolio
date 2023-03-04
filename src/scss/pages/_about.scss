@@ -1,6 +1,7 @@
 .about {
   .family-img {
     max-height: 300px;
+    filter: blur(20px) opacity(.75);
   }
   .family-wrapper {
     display: flex;
